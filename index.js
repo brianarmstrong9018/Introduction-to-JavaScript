@@ -17,7 +17,9 @@ Do the following:
 
    HINT: no function required
 */
+var votingAge = 17;
 
+console.log(votingAge >18);
 
 
 /*
@@ -31,9 +33,13 @@ Do the following:
    HINT: no function required
 */
 
+let firstVariable = 1;
+let secondVariable = 2;
 
-
-
+if (secondVariable === 2){
+  firstVariable = 9;
+}
+console.log(firstVariable);
 
 /*
 Task 1c - Convert Strings to Numbers
@@ -46,6 +52,9 @@ Do the following:
    HINT: look up the Number method
 */
 
+let number = "1999";
+number = Number(number);
+console.log(number);
 
 
 
