@@ -67,15 +67,20 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
-    /*add your code here*/
+function multiply(a, b){
+    return a*b;
   }
 
+  function multiply(num1, num2){
+    console.log(num1*num2);
+    }
+    multiply(4,7);
+  
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
-//Age in Dog years
+//Age in Dog yearss
 /*
 Do the following:
    1. Invoke the dogYears function below and pass an age value to it
