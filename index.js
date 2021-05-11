@@ -44,7 +44,7 @@ if(num1 === 15){
 
 
 /*
-Task 1c - Convert Strings to Numbers
+Task 1c - Convvaert Strings to Numbers
 
 Do the following:   
    1. Declare a string type variable with the value of "1999"
