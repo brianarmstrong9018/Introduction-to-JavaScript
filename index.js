@@ -17,7 +17,9 @@ Do the following:
 
    HINT: no function required
 */
+var votingAge = 18;
 
+console.log(votingAge >18);
 
 
 /*
@@ -31,8 +33,13 @@ Do the following:
    HINT: no function required
 */
 
+let firstVariable = 1;
+let secondVariable = 2;
 
-
+if (secondVariable === 2){
+  firstVariable = 9;
+  console.log(firstVariable);
+}
 
 
 /*
@@ -46,6 +53,9 @@ Do the following:
    HINT: look up the Number method
 */
 
+let number = "1999";
+number = Number(number);
+console.log(number);
 
 
 
@@ -58,15 +68,16 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
-    /*add your code here*/
+
+  function multiply(num1, num2){
+
+  return num1 * num2;
   }
-
-
+  multiply(4,7)
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
-//Age in Dog years
+//Age in Dog yearss
 /*
 Do the following:
    1. Invoke the dogYears function below and pass an age value to it
@@ -74,9 +85,10 @@ Do the following:
    3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-    /*add your code here*/
+function dogYears(age){
+  return age * 7;
 }
+
 
 
 
@@ -107,9 +119,22 @@ Use the hungryDog function and feeding requirements below to do the following:
   NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
 */  
 
-function hungryDog(/*add your code here*/){
-    /*add your code here*/
-  }
+function hungryDog(dogWeight, dogAge) {
+	if (dogAge * 12 <= 4) {
+		return dogWeight * 0.1;
+	} else if (dogAge * 12 <= 7) {
+		return dogWeight * 0.05;
+	} else if (dogAge * 12 < 1) {
+		return dogWeight * 0.04;
+	} else if (dogWeight <= 5) {
+		return dogWeight * 0.05;
+	} else if (dogWeight <= 10) {
+		return dogWeight * 0.04;
+	} else if (dogWeight <= 15) {
+		return dogWeight * 0.03;
+	} else {
+		return dogWeight * 0.02;
+	}
 
 
 
@@ -134,9 +159,24 @@ Use the game function below to do the following:
   HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
 
-function game(user, computer){
-    /*add your code here*/
+let computer = math.random();
+if (computer <= 0.34){
+  computer = "rock";
+}else if(computer <= .67){
+    computer = "paper";
+}else if (computer >= .67){
+    computer = "scissors";
 }
+
+function game(user, computer){
+    if (user === computer){
+      return 'it's a tie';
+    }else if (user === 'rock' && computer === 'scissors'){
+      return 'you win!';
+    } else if (user === 'paper' && computer === 'rock'){
+      return 'you win!';
+    }else if (user === 'scissors' && computer === 'paper')
+  {
   
   
 
@@ -151,10 +191,9 @@ Using the miles function below do the following:
   3. Return the number of miles
 */
 
-function miles(/*add your code here*/){
-    /*add your code here*/
+function miles(kilometers){
+    return kilometers * 0.621371;
   }
-
 
 
 //Task 5b - Feet to CM
@@ -165,8 +204,8 @@ Using the feet function below do the following:
   3. Return number of feet
 */
 
-function feet(/*add your code here*/){
-    /*add your code here*/
+function feet(cm){
+    return cm * 30.48
   }
  
 
